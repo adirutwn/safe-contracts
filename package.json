@@ -27,7 +27,8 @@
     "fmt:sol": "prettier 'contracts/**/*.sol' -w",
     "prepack": "yarn build",
     "prepare": "husky install",
-    "prepublish": "yarn rimraf build && yarn build && yarn build:ts"
+    "prepublish": "yarn rimraf build && yarn build && yarn build:ts",
+    "bsc:scripts:transfer-bep20": "hardhat --network bsc run --no-compile ./scripts/transfer-bep20.ts"
   },
   "repository": {
     "type": "git",
